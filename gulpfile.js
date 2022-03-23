@@ -18,7 +18,7 @@ function compilaSass() {
     browsers: ['last 2 versions'],
     cascade: false
   }))
-  .pipe(gulp.dest('assets/css/'))
+  .pipe(gulp.dest('./'))
   .pipe(browserSync.stream());
 }
 
@@ -72,6 +72,7 @@ function watch() {
   gulp.watch('assets/css/scss/*.scss', compilaSass);
   gulp.watch('assets/js/main/*.js', gulpJS);
   gulp.watch(['*.html']).on('change', browserSync.reload);
+  gulp.watch(['**/*.html']).on('change', browserSync.reload);
 }
 
 // Inicia a tarefa de watch
