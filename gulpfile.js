@@ -18,7 +18,7 @@ function compilaSass() {
     browsers: ['last 2 versions'],
     cascade: false
   }))
-  .pipe(gulp.dest('./'))
+  .pipe(gulp.dest('assets/css/'))
   .pipe(browserSync.stream());
 }
 

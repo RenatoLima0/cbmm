@@ -17,7 +17,7 @@ if(document.querySelector('.nav-princ')){
 }
 
 $('.owl-carousel-main').owlCarousel({
-  loop: true,
+  loop: false,
   margin: 24,
   nav: false,
   responsive: {
@@ -28,7 +28,7 @@ $('.owl-carousel-main').owlCarousel({
       items:3
     },
     1000:{
-      items:4.2
+      items:4
     }
   }
 })
