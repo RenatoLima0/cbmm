@@ -238,7 +238,11 @@ a {
     font-family: 'telegraf-bold';    
     font-size: 5rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+
+    span {
+      font-size: inherit;
+    }
   }
 
   p {
