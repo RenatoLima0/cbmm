@@ -9,7 +9,8 @@ $gray: #A6A7AA;
 @import 'components/fonts';
 
 *, html {
-  font-family: 'telegraf-regular';    
+  font-family: 'telegraf-regular'; 
+  font-size: 1rem;   
   line-height: 1;
 }
 
@@ -222,19 +223,11 @@ a {
 }
 
 .banner {
-  background: url(/assets/images/home/banner.png), #E5EFFC;
-  background-position: 0 -80px;
-  background-repeat: no-repeat;
-  background-size: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 100vh;
-  padding-bottom: 4rem;
-  position: relative;
 
   * {
-    color: #BFE4FF;
+    color: #DEEDFF;
   }
 
   h1 {
@@ -253,6 +246,17 @@ a {
   .actions {
     margin-top: 2rem;
   }
+}
+
+.banner.banner-home {
+  background: url(/assets/images/home/banner.png), #E5EFFC;
+  background-position: 0 -80px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  justify-content: flex-end;
+  padding-bottom: 4rem;
+  position: relative;
 
   .arrow-down {
     align-items: center;
@@ -262,7 +266,6 @@ a {
     justify-content: center;
     position: absolute;
     right: 50%;
-    // transform: translateX(-50%);
     width: 60px;
   }
 
@@ -271,9 +274,124 @@ a {
   }
 }
 
+.banner.banner-boas-vindas {
+  background: linear-gradient(90deg, #0064de 10%, transparent 15%) ,url(/assets/images/boas-vindas/bg-banner.png) 100px 0;
+  // background-color: #A6A7AA;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  height: 70vh;
+}
+
 main {
   section {
     padding: 2rem 0;
+  }
+}
+
+.bg-boas-vindas {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.main-interna {
+  h3 {
+    color: $blue;
+    font-size: 1.25rem;
+    font-family: 'telegraf-bold';
+    line-height: 1;
+  }
+  
+  h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'telegraf-regular';
+    color: $blue;
+    
+    strong {
+      font-family: 'telegraf-bold';
+      font-size: inherit;
+    }
+  }
+
+  p {
+    line-height: 1.3;
+  }
+
+  .card-interno {
+    background: #E5EFFC;
+    box-shadow: 0px 0px 8px 3px #E5EFFC;
+    border-radius: 16px;
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 60%;
+
+    * {
+      color: $blue;
+    }
+  }
+}
+
+.bg-gradient-boas {
+  background: linear-gradient(180deg, #fff 0%, #e5effc 25%, #e5effc 25%, #fff 26%);
+  
+  .img-shadow {
+    box-shadow: 0px 0px 16px 6px #E5EFFC;
+    border-radius: 16px;
+    margin-top: 3rem;
+  }
+}
+
+.sub-title {
+  color: #76777A;
+  font-size: 1.375rem;
+  margin-bottom: 3rem;
+}
+
+.col-msg {
+  background: #fff;
+  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, .25);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+}
+
+.caixa-flutuante {
+  border-radius: 8px;
+  position: absolute;
+  left: 40px;
+  top: 30px;
+
+  header {
+    padding: .5rem 2.5rem .5rem 1.5rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  h3 {
+    color: #fff;
+    font-family: 'telegraf-bold';
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-family: 'telegraf-regular';
+    font-size: 1rem;
+    padding: .75rem 2.5rem .75rem 1.5rem;
+  }
+}
+
+.caixa-flutuante.boas-vindas {
+  box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, .15);
+
+  header {
+    background: $blue;
   }
 }
 
