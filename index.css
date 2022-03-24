@@ -318,7 +318,7 @@ a:hover {
 }
 
 .banner.banner-home {
-  background: url(/assets/images/home/banner.png), #E5EFFC;
+  background: url(./assets/images/home/banner.png), #E5EFFC;
   background-position: 0 -80px;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -353,8 +353,8 @@ a:hover {
 }
 
 .banner.banner-boas-vindas {
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0064de), color-stop(15%, transparent)), url(/assets/images/boas-vindas/bg-banner.png) 100px 0;
-  background: linear-gradient(90deg, #0064de 10%, transparent 15%), url(/assets/images/boas-vindas/bg-banner.png) 100px 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0064de), color-stop(15%, transparent)), url(./assets/images/boas-vindas/bg-banner.png) 100px 0;
+  background: linear-gradient(90deg, #0064de 10%, transparent 15%), url(./assets/images/boas-vindas/bg-banner.png) 100px 0;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-pack: center;
@@ -483,23 +483,23 @@ main section {
 }
 
 .sec-carousel .card-1 {
-  background-image: url(/assets/images/home/card-temas-rel-1.png)
+  background-image: url(./assets/images/home/card-temas-rel-1.png)
 }
 
 .sec-carousel .card-2 {
-  background-image: url(/assets/images/home/card-temas-rel-2.png)
+  background-image: url(./assets/images/home/card-temas-rel-2.png)
 }
 
 .sec-carousel .card-3 {
-  background-image: url(/assets/images/home/card-temas-rel-3.png)
+  background-image: url(./assets/images/home/card-temas-rel-3.png)
 }
 
 .sec-carousel .card-4 {
-  background-image: url(/assets/images/home/card-temas-rel-4.png)
+  background-image: url(./assets/images/home/card-temas-rel-4.png)
 }
 
 .sec-carousel .card-5 {
-  background-image: url(/assets/images/home/card-temas-rel-5.png)
+  background-image: url(./assets/images/home/card-temas-rel-5.png)
 }
 
 .owl-carousel-main.owl-loaded {
@@ -542,7 +542,7 @@ main section {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  background: url(/assets/images/home/bg-inovacao.png) -40px -100px, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
+  background: url(./assets/images/home/bg-inovacao.png) -40px -100px, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
   background-repeat: no-repeat;
   background-size: 105%;
   display: -webkit-box;
@@ -622,7 +622,7 @@ main section {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  background: url(/assets/images/home/bg-gestao.png), linear-gradient(60deg, #202d22 12%, #515151 30%) 0 0px;
+  background: url(./assets/images/home/bg-gestao.png), linear-gradient(60deg, #202d22 12%, #515151 30%) 0 0px;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,7 +708,7 @@ main section {
 }
 
 .sec-relacionamento {
-  background: linear-gradient(45deg, #fff 1%, rgba(0, 0, 0, 0) 35%), url(/assets/images/home/circulo.png) -900px 100px, url(/assets/images/home/bg-relacionamento.png) 0 50%;
+  background: linear-gradient(45deg, #fff 1%, rgba(0, 0, 0, 0) 35%), url(./assets/images/home/circulo.png) -900px 100px, url(./assets/images/home/bg-relacionamento.png) 0 50%;
   background-size: 100%;
   background-repeat: no-repeat;
   margin-top: 1rem
@@ -819,11 +819,11 @@ main section {
 }
 
 .sec-relacionamento .cards-dialogo .card:first-child {
-  background: url(/assets/images/home/card-temas-1.png)
+  background: url(./assets/images/home/card-temas-1.png)
 }
 
 .sec-relacionamento .cards-dialogo .card:last-child {
-  background: url(/assets/images/home/card-temas-2.png)
+  background: url(./assets/images/home/card-temas-2.png)
 }
 
 .sec-relacionamento .cards-dialogo h4 {
@@ -840,7 +840,7 @@ main section {
 }
 
 .sec-fornecedores {
-  background: url(/assets/images/home/bg-fornecedores.png);
+  background: url(./assets/images/home/bg-fornecedores.png);
   background-size: contain;
   padding: 4rem 0
 }
@@ -870,7 +870,7 @@ main section {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  background: url(/assets/images/home/bg-ambiente.png) -155px -40px;
+  background: url(./assets/images/home/bg-ambiente.png) -155px -40px;
   background-size: 115%;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -920,7 +920,7 @@ main section {
 }
 
 .sec-bio .card-ambiente {
-  background: url(/assets/images/home/img-biodi.png);
+  background: url(./assets/images/home/img-biodi.png);
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 8px;
@@ -938,7 +938,7 @@ main section {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  background: url(/assets/images/home/bg-etica.png) 0 -80px, #213769;
+  background: url(./assets/images/home/bg-etica.png) 0 -80px, #213769;
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -1008,7 +1008,7 @@ main section {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  background: url(/assets/images/home/bg-relato.png) -370px 0;
+  background: url(./assets/images/home/bg-relato.png) -370px 0;
   background-size: 150%;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -1048,7 +1048,7 @@ footer {
   }
 
   .sec-relacionamento {
-    background: linear-gradient(45deg, #fff 1%, rgba(0, 0, 0, 0) 35%), url(/assets/images/home/circulo.png) -1050px 100px, url(/assets/images/home/bg-relacionamento.png) 0 55%;
+    background: linear-gradient(45deg, #fff 1%, rgba(0, 0, 0, 0) 35%), url(./assets/images/home/circulo.png) -1050px 100px, url(./assets/images/home/bg-relacionamento.png) 0 55%;
     background-repeat: no-repeat;
     background-size: 100%
   }
@@ -1062,7 +1062,7 @@ footer {
   }
 
   .sec-ambiente {
-    background: url(/assets/images/home/bg-ambiente.png) -225px -40px;
+    background: url(./assets/images/home/bg-ambiente.png) -225px -40px;
     background-size: 115%;
     background-repeat: no-repeat;
     padding-top: 0rem;
@@ -1074,7 +1074,7 @@ footer {
   }
 
   .sec-relato {
-    background: url(/assets/images/home/bg-relato.png) -525px 0;
+    background: url(./assets/images/home/bg-relato.png) -525px 0;
     background-size: 150%;
     background-repeat: no-repeat;
     height: 80vh;
