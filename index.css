@@ -302,9 +302,14 @@ a:hover {
 
 .banner h1 {
   font-family: 'telegraf-bold';
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase
+}
+
+.banner h1 span {
+  font-family: 'telegraf-light';
+  font-size: inherit
 }
 
 .banner p {
@@ -363,17 +368,73 @@ a:hover {
   height: 70vh
 }
 
+.banner.banner-inovacao {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #4abf88), color-stop(15%, transparent)), url(./assets/images/inovacao/banner.png) 100px 0;
+  background: linear-gradient(90deg, #4abf88 10%, transparent 15%), url(./assets/images/inovacao/banner.png) 100px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70vh
+}
+
+.banner.banner-gestao {
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #6440C4), color-stop(15%, transparent)), url(./assets/images/gestao/banner.png) 100px 0;
+  background: linear-gradient(90deg, #6440C4 20%, transparent 15%), url(./assets/images/gestao/banner.png) 100px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70vh
+}
+
+.banner.banner-relacionamento {
+  background: url(./assets/images/relacionamento/banner.png) 0px -18px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70vh
+}
+
+.banner.banner-ambiente {
+  background: url(./assets/images/ambiente/banner.png) 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70vh
+}
+
+.banner.banner-etica {
+  background: url(./assets/images/etica/banner.png) -80px -40px;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70vh
+}
+
+.banner.banner-relato {
+  background: url(./assets/images/relato/banner.png) -80px -40px;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70vh
+}
+
 main section {
   padding: 2rem 0
 }
 
-.bg-boas-vindas {
-  background-size: 100%;
-  background-repeat: no-repeat
-}
-
 .main-interna h3 {
-  color: #0073ff;
   font-size: 1.25rem;
   font-family: 'telegraf-bold';
   line-height: 1
@@ -382,8 +443,7 @@ main section {
 .main-interna h2 {
   text-transform: uppercase;
   font-size: 3rem;
-  font-family: 'telegraf-regular';
-  color: #0073ff
+  font-family: 'telegraf-regular'
 }
 
 .main-interna h2 strong {
@@ -396,17 +456,134 @@ main section {
 }
 
 .main-interna .card-interno {
-  background: #E5EFFC;
-  -webkit-box-shadow: 0px 0px 8px 3px #E5EFFC;
-  box-shadow: 0px 0px 8px 3px #E5EFFC;
   border-radius: 16px;
   margin: 2rem 0;
   padding: 1rem;
   width: 60%
 }
 
-.main-interna .card-interno * {
+.main-interna .card-interno.softblue {
+  background: #E5EFFC;
+  -webkit-box-shadow: 0px 0px 8px 3px #E5EFFC;
+  box-shadow: 0px 0px 8px 3px #E5EFFC
+}
+
+.main-interna .card-interno.softblue * {
   color: #0073ff
+}
+
+.main-interna .card-interno.softgreen {
+  background: #F2FFF5;
+  -webkit-box-shadow: 0px 0px 8px 3px #F2FFF5;
+  box-shadow: 0px 0px 8px 3px #F2FFF5
+}
+
+.main-interna .card-interno.softgreen * {
+  color: #4df697
+}
+
+.main-interna .card-interno.softyellow {
+  background: #FFF9F2;
+  -webkit-box-shadow: 0px 0px 8px 3px #FFF9F2;
+  box-shadow: 0px 0px 8px 3px #FFF9F2
+}
+
+.main-interna .card-interno.softyellow * {
+  color: #f6ad4d
+}
+
+.main-interna .card-interno.heavypurple {
+  background: #18284D;
+  -webkit-box-shadow: 0px 0px 8px 3px #FFF9F2;
+  box-shadow: 0px 0px 8px 3px #FFF9F2
+}
+
+.main-interna .card-interno.heavypurple * {
+  color: #fff
+}
+
+.main-interna.main-interna-boas h3 {
+  color: #0073ff
+}
+
+.main-interna.main-interna-boas h2 {
+  color: #0073ff
+}
+
+.main-interna.main-interna-boas h2 * {
+  color: inherit
+}
+
+.main-interna.main-interna-inovacao h3 {
+  color: #4df697
+}
+
+.main-interna.main-interna-inovacao h2 {
+  color: #4df697
+}
+
+.main-interna.main-interna-inovacao h2 * {
+  color: inherit
+}
+
+.main-interna.main-interna-gestao h3 {
+  color: #7b73e6
+}
+
+.main-interna.main-interna-gestao h2 {
+  color: #7b73e6
+}
+
+.main-interna.main-interna-gestao h2 * {
+  color: inherit
+}
+
+.main-interna.main-interna-relacionamento h3 {
+  color: #f6ad4d
+}
+
+.main-interna.main-interna-relacionamento h2 {
+  color: #f6ad4d
+}
+
+.main-interna.main-interna-relacionamento h2 * {
+  color: inherit
+}
+
+.main-interna.main-interna-ambiente h3 {
+  color: #D9D216
+}
+
+.main-interna.main-interna-ambiente h2 {
+  color: #D9D216
+}
+
+.main-interna.main-interna-ambiente h2 * {
+  color: inherit
+}
+
+.main-interna.main-interna-etica h3 {
+  color: #235FB1
+}
+
+.main-interna.main-interna-etica h2 {
+  color: #235FB1
+}
+
+.main-interna.main-interna-etica h2 * {
+  color: inherit
+}
+
+.main-interna.main-interna-relato h3 {
+  color: #A6A7AA
+}
+
+.main-interna.main-interna-relato h2 {
+  color: #A6A7AA
+}
+
+.main-interna.main-interna-relato h2 * {
+  color: inherit
 }
 
 .bg-gradient-boas {
@@ -417,6 +594,30 @@ main section {
 .bg-gradient-boas .img-shadow {
   -webkit-box-shadow: 0px 0px 16px 6px #E5EFFC;
   box-shadow: 0px 0px 16px 6px #E5EFFC;
+  border-radius: 16px;
+  margin-top: 3rem
+}
+
+.bg-gradient-inovacao {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(25%, #EAF8EE), color-stop(25%, #EAF8EE), color-stop(26%, #fff));
+  background: linear-gradient(180deg, #fff 0%, #EAF8EE 25%, #EAF8EE 25%, #fff 26%)
+}
+
+.bg-gradient-inovacao .img-shadow {
+  -webkit-box-shadow: 0px 0px 16px 6px #EAF8EE;
+  box-shadow: 0px 0px 16px 6px #EAF8EE;
+  border-radius: 16px;
+  margin-top: 3rem
+}
+
+.bg-gradient-gestao {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(25%, #F0EEFF), color-stop(25%, #F0EEFF), color-stop(26%, #fff));
+  background: linear-gradient(180deg, #fff 0%, #F0EEFF 25%, #F0EEFF 25%, #fff 26%)
+}
+
+.bg-gradient-gestao .img-shadow {
+  -webkit-box-shadow: 0px 0px 16px 6px #F0EEFF;
+  box-shadow: 0px 0px 16px 6px #F0EEFF;
   border-radius: 16px;
   margin-top: 3rem
 }
@@ -437,6 +638,8 @@ main section {
 
 .caixa-flutuante {
   border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.15);
   position: absolute;
   left: 40px;
   top: 30px
@@ -449,7 +652,7 @@ main section {
 }
 
 .caixa-flutuante h3 {
-  color: #fff;
+  color: #fff !important;
   font-family: 'telegraf-bold';
   font-size: 1.25rem;
   margin: 0
@@ -467,13 +670,32 @@ main section {
   padding: .75rem 2.5rem .75rem 1.5rem
 }
 
-.caixa-flutuante.boas-vindas {
-  -webkit-box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.15)
-}
-
 .caixa-flutuante.boas-vindas header {
   background: #0073ff
+}
+
+.caixa-flutuante.inovacao header {
+  background: #45E68B
+}
+
+.caixa-flutuante.gestao header {
+  background: #8A80FF
+}
+
+.caixa-flutuante.relacionamento header {
+  background: #FFA126
+}
+
+.caixa-flutuante.ambiente header {
+  background: #DACE1C
+}
+
+.caixa-flutuante.etica header {
+  background: #2E4799
+}
+
+.caixa-flutuante.relato header {
+  background: #76777A
 }
 
 .sec-carousel h2 {
