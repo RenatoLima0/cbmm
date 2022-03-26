@@ -266,7 +266,7 @@ a:hover {
   width: 40%
 }
 
-.nav-princ .lenguage {
+.nav-princ .language {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -434,10 +434,39 @@ main section {
   padding: 2rem 0
 }
 
+.list-style-none {
+  list-style: none
+}
+
+.list-style-none ul {
+  margin-bottom: 1.5rem
+}
+
+.list-style-none ul:last-child {
+  margin-bottom: 0
+}
+
+.list-style-none ul li:nth-child(2) {
+  margin: .75rem 0
+}
+
+.list-style-none .li-title {
+  font-family: 'telegraf-bold';
+  color: #0ceb6d;
+  margin-bottom: .75rem
+}
+
 .main-interna h3 {
   font-size: 1.25rem;
   font-family: 'telegraf-bold';
   line-height: 1
+}
+
+.main-interna h3 * {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 .main-interna h2 {
@@ -460,6 +489,11 @@ main section {
   margin: 2rem 0;
   padding: 1rem;
   width: 60%
+}
+
+.main-interna .card-interno a {
+  text-decoration: underline;
+  font-family: 'telegraf-bold'
 }
 
 .main-interna .card-interno.softblue {
@@ -500,6 +534,16 @@ main section {
 
 .main-interna .card-interno.heavypurple * {
   color: #fff
+}
+
+.main-interna .card-interno.softpurple {
+  background: #7b73e647;
+  -webkit-box-shadow: 0px 0px 8px 3px #FFF9F2;
+  box-shadow: 0px 0px 8px 3px #FFF9F2
+}
+
+.main-interna .card-interno.softpurple * {
+  color: #7b73e6
 }
 
 .main-interna.main-interna-boas h3 {
@@ -625,7 +669,7 @@ main section {
 .sub-title {
   color: #76777A;
   font-size: 1.375rem;
-  margin-bottom: 3rem
+  margin-bottom: 1.5rem
 }
 
 .col-msg {
@@ -664,7 +708,19 @@ main section {
   padding: 0
 }
 
-.caixa-flutuante li {
+.caixa-flutuante .nav-tabs .nav-link {
+  border: 1px solid transparent
+}
+
+.caixa-flutuante a {
+  color: #76777A
+}
+
+.caixa-flutuante li,
+.caixa-flutuante button,
+.caixa-flutuante .nav-link,
+.caixa-flutuante .nav-link:hover {
+  color: #76777A;
   font-family: 'telegraf-regular';
   font-size: 1rem;
   padding: .75rem 2.5rem .75rem 1.5rem
