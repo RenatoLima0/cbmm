@@ -158,12 +158,11 @@ a {
 
   .items-menu {
     background-color: #fff;
-    display: flex;
+    display: none;
     flex-direction: column;
-    height: 100%;
+    height: fit-content;
     padding: 2rem .5rem 1rem;
     position: fixed;
-    transform: translateX(-150%);
     transition: .3s;
     top: 0%;
     width: 100%;
@@ -181,7 +180,7 @@ a {
   }
   
   .items-menu.ativo {
-    transform: translateX(-2%);
+    display: flex;
   }
 
   .desc {
@@ -906,10 +905,6 @@ main {
       font-size: 1rem;
       font-weight: 700;
       padding-left: 1rem;
-      
-      &::before {
-        content: '"';
-      }
     }
 
   }
@@ -1117,6 +1112,7 @@ main {
     font-family: 'telegraf-bold';
     text-transform: uppercase;    
     font-size: 3.75rem;
+  
   }
 
   p {
@@ -1140,6 +1136,11 @@ main {
     line-height: 1;
     margin-bottom: 2rem;
     text-transform: uppercase;
+    
+    i {
+      font-family: 'telegraf-bold';
+      font-size: inherit;
+    }
   }
 
   h3 {
