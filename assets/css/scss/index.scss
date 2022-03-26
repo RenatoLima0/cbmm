@@ -345,6 +345,28 @@ main {
   }
 }
 
+.list-style-none {
+  list-style: none;
+
+  ul {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    li:nth-child(2) {
+      margin: .75rem 0;
+    }
+  }
+
+  .li-title {
+    font-family: 'telegraf-bold';
+    color: darken($green, 15%);
+    margin-bottom: .75rem;
+  }
+}
+
 .main-interna {
   h3 {
     font-size: 1.25rem;
@@ -372,6 +394,11 @@ main {
     margin: 2rem 0;
     padding: 1rem;
     width: 60%;
+
+    a {
+      text-decoration: underline;
+      font-family: 'telegraf-bold';
+    }
   }
   
   .card-interno.softblue {
@@ -407,6 +434,15 @@ main {
 
     * {
       color: #fff;
+    }
+  }
+  
+  .card-interno.softpurple {
+    background: #7b73e647;
+    box-shadow: 0px 0px 8px 3px #FFF9F2;
+
+    * {
+      color: $purple;
     }
   }
 }
@@ -542,7 +578,7 @@ main {
 .sub-title {
   color: #76777A;
   font-size: 1.375rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .col-msg {
@@ -578,7 +614,16 @@ main {
     padding: 0;
   }
 
-  li {
+  .nav-tabs .nav-link {
+    border: 1px solid transparent;
+  }
+
+  a {
+    color: #76777A;
+  }
+
+  li, button, .nav-link, .nav-link:hover {
+    color: #76777A;
     font-family: 'telegraf-regular';
     font-size: 1rem;
     padding: .75rem 2.5rem .75rem 1.5rem;
