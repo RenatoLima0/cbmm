@@ -1511,6 +1511,16 @@ footer {
     height: 50vh;
   }
 
+  .banner.banner-etica {
+    background: url(/assets/images/etica/banner.png) -375px -75px;
+    background-size: 450%;
+    height: 50vh;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
   .owl-carousel-main.owl-loaded .card {
     min-height: 450px;
   }
