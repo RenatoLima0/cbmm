@@ -281,7 +281,7 @@ a {
 }
 
 .banner.banner-home {
-  background: url(/assets/images/home/banner.png), #E5EFFC;
+  background: url(./assets/images/home/banner.png), #E5EFFC;
   background-position: 0 -80px;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -307,7 +307,7 @@ a {
 }
 
 .banner.banner-boas-vindas {
-  background: linear-gradient(90deg, #0064de 10%, transparent 15%) ,url(/assets/images/boas-vindas/bg-banner.png) 100px 0;
+  background: linear-gradient(90deg, #0064de 10%, transparent 15%) ,url(./assets/images/boas-vindas/bg-banner.png) 100px 0;
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
@@ -315,7 +315,7 @@ a {
 }
 
 .banner.banner-inovacao {
-  background: linear-gradient(90deg, #4abf88 10%, transparent 15%) ,url(/assets/images/inovacao/banner.png) 100px 0;
+  background: linear-gradient(90deg, #4abf88 10%, transparent 15%) ,url(./assets/images/inovacao/banner.png) 100px 0;
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
@@ -323,7 +323,7 @@ a {
 }
 
 .banner.banner-gestao {
-  background: linear-gradient(90deg, #6440C4 20%, transparent 15%) ,url(/assets/images/gestao/banner.png) 100px 0;
+  background: linear-gradient(90deg, #6440C4 20%, transparent 15%) ,url(./assets/images/gestao/banner.png) 100px 0;
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
@@ -331,7 +331,7 @@ a {
 }
 
 .banner.banner-relacionamento {
-  background: url(/assets/images/relacionamento/banner.png) 0px -18px;
+  background: url(./assets/images/relacionamento/banner.png) 0px -18px;
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
@@ -339,7 +339,7 @@ a {
 }
 
 .banner.banner-ambiente {
-  background: url(/assets/images/ambiente/banner.png) 0px 0px;
+  background: url(./assets/images/ambiente/banner.png) 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
@@ -347,7 +347,7 @@ a {
 }
 
 .banner.banner-etica {
-  background: url(/assets/images/etica/banner.png) -80px -40px;
+  background: url(./assets/images/etica/banner.png) -80px -40px;
   background-size: 130%;
   background-repeat: no-repeat;
   justify-content: center;
@@ -355,7 +355,7 @@ a {
 }
 
 .banner.banner-relato {
-  background: url(/assets/images/relato/banner.png) -80px -40px;
+  background: url(./assets/images/relato/banner.png) -80px -40px;
   background-size: 110%;
   background-repeat: no-repeat;
   justify-content: center;
@@ -719,23 +719,23 @@ main {
   }
 
   .card-1 {
-    background-image: url(/assets/images/home/card-temas-rel-1.png);
+    background-image: url(./assets/images/home/card-temas-rel-1.png);
   }
 
   .card-2 {
-    background-image: url(/assets/images/home/card-temas-rel-2.png);
+    background-image: url(./assets/images/home/card-temas-rel-2.png);
   }
 
   .card-3 {
-    background-image: url(/assets/images/home/card-temas-rel-3.png);
+    background-image: url(./assets/images/home/card-temas-rel-3.png);
   }
 
   .card-4 {
-    background-image: url(/assets/images/home/card-temas-rel-4.png);
+    background-image: url(./assets/images/home/card-temas-rel-4.png);
   }
 
   .card-5 {
-    background-image: url(/assets/images/home/card-temas-rel-5.png);
+    background-image: url(./assets/images/home/card-temas-rel-5.png);
   }
 }
 
@@ -773,7 +773,7 @@ main {
 
 .sec-inovacao {
   align-items: flex-end;
-  background: url(/assets/images/home/bg-inovacao.png) -40px -100px, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
+  background: url(./assets/images/home/bg-inovacao.png) -40px -100px, linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
   // background-position: ;
   background-repeat: no-repeat;
   background-size: 105%;
@@ -846,7 +846,7 @@ main {
 
 .sec-gestao {
   align-items: flex-end;
-  background: url(/assets/images/home/bg-gestao.png), linear-gradient(60deg, #202d22 12%, #515151 30%) 0 0px;
+  background: url(./assets/images/home/bg-gestao.png), linear-gradient(60deg, #202d22 12%, #515151 30%) 0 0px;
   background-size: cover;
   display: flex;
   height: 90vh;
@@ -923,7 +923,7 @@ main {
 
 .sec-relacionamento {
   // background: linear-gradient(180deg, #fff 20%, #ffa126 20%, #ffa126 67%, #fff 65%);
-  background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%), url(/assets/images/home/circulo.png) -900px 100px, url(/assets/images/home/bg-relacionamento.png) 0 50%;
+  background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%), url(./assets/images/home/circulo.png) -900px 100px, url(./assets/images/home/bg-relacionamento.png) 0 50%;
   background-size: 100%;
   background-repeat: no-repeat;
   margin-top: 1rem;
@@ -1017,11 +1017,11 @@ main {
       width: 47%;
 
       &:first-child {
-        background: url(/assets/images/home/card-temas-1.png);
+        background: url(./assets/images/home/card-temas-1.png);
       }
 
       &:last-child {
-        background: url(/assets/images/home/card-temas-2.png);
+        background: url(./assets/images/home/card-temas-2.png);
       }
     }
 
@@ -1041,7 +1041,7 @@ main {
 }
 
 .sec-fornecedores {
-  background: url(/assets/images/home/bg-fornecedores.png);
+  background: url(./assets/images/home/bg-fornecedores.png);
   background-size: contain;
   padding: 4rem 0;
 
@@ -1070,7 +1070,7 @@ main {
 
 .sec-ambiente {
   align-items: flex-end;
-  background: url(/assets/images/home/bg-ambiente.png) -155px -40px;
+  background: url(./assets/images/home/bg-ambiente.png) -155px -40px;
   background-size: 115%;
   background-repeat: no-repeat;
   display: flex;
@@ -1117,7 +1117,7 @@ main {
   }
   
   .card-ambiente {
-    background: url(/assets/images/home/img-biodi.png);
+    background: url(./assets/images/home/img-biodi.png);
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 8px;
@@ -1134,7 +1134,7 @@ main {
 
 .sec-etica {
   align-items: flex-end;
-  background: url(/assets/images/home/bg-etica.png) 0 -80px, #213769;
+  background: url(./assets/images/home/bg-etica.png) 0 -80px, #213769;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -1152,12 +1152,15 @@ main {
     font-family: 'telegraf-bold';
     text-transform: uppercase;    
     font-size: 3.75rem;
-  
   }
 
   p {
     font-size: 1.25rem;
     font-family: 'telegraf-light';
+
+    i {
+      font-family: 'telegraf-light';
+    }
   }
 }
 
@@ -1205,7 +1208,7 @@ main {
 
 .sec-relato {
   align-items: flex-end;
-  background: url(/assets/images/home/bg-relato.png) -370px 0;
+  background: url(./assets/images/home/bg-relato.png) -370px 0;
   background-size: 150%;
   background-repeat: no-repeat;
   display: flex;
@@ -1261,7 +1264,7 @@ footer {
   }
 
   .sec-relacionamento {
-    background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%),url(/assets/images/home/circulo.png) -830px 100px,url(/assets/images/home/bg-relacionamento.png) 0 50%;
+    background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%),url(./assets/images/home/circulo.png) -830px 100px,url(./assets/images/home/bg-relacionamento.png) 0 50%;
     background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 1rem;
@@ -1300,7 +1303,7 @@ footer {
   }
 
   .sec-ambiente {
-    background: url(/assets/images/home/bg-ambiente.png) -120px -25px;
+    background: url(./assets/images/home/bg-ambiente.png) -120px -25px;
     background-size: 130%;
     min-height: 45vh;
     padding-bottom: 6rem;
@@ -1315,18 +1318,18 @@ footer {
   }
 
   .banner.banner-ambiente {
-    background: url(/assets/images/ambiente/banner.png) -160px 0px;
+    background: url(./assets/images/ambiente/banner.png) -160px 0px;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .banner.banner-etica {
-    background: url(/assets/images/etica/banner.png) -375px -40px;
+    background: url(./assets/images/etica/banner.png) -375px -40px;
     background-size: 170%;
   }
 
   .banner.banner-relato {
-    background: url(/assets/images/relato/banner.png) -80px 0px;
+    background: url(./assets/images/relato/banner.png) -80px 0px;
     background-size: 130%;
     background-repeat: no-repeat;
   }
@@ -1358,21 +1361,21 @@ footer {
   }
 
   .banner.banner-ambiente {
-    background: url(/assets/images/ambiente/banner.png) -0px 0px;
+    background: url(./assets/images/ambiente/banner.png) -0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 25vh;
   }
 
   .banner.banner-etica {
-    background: url(/assets/images/etica/banner.png) -275px -40px;
+    background: url(./assets/images/etica/banner.png) -275px -40px;
     background-size: 170%;
     height: 25vh;
   }
 
   .banner.banner-relato {
     height: 25vh;
-    background: url(/assets/images/relato/banner.png) -80px -90px;
+    background: url(./assets/images/relato/banner.png) -80px -90px;
     background-size: 130%;
     background-repeat: no-repeat;
   }
@@ -1395,14 +1398,14 @@ footer {
   } 
 
   .banner.banner-boas-vindas {
-    background: linear-gradient(90deg, #0064de 10%, transparent 15%),url(/assets/images/boas-vindas/bg-banner.png) 30px 0;
+    background: linear-gradient(90deg, #0064de 10%, transparent 15%),url(./assets/images/boas-vindas/bg-banner.png) 30px 0;
     background-size: cover;
     background-repeat: no-repeat;
     height: 30vh;
   }
 
   .banner.banner-inovacao {
-    background: linear-gradient(90deg, #4abf88 10%, transparent 15%),url(/assets/images/inovacao/banner.png) 40px 0;
+    background: linear-gradient(90deg, #4abf88 10%, transparent 15%),url(./assets/images/inovacao/banner.png) 40px 0;
     height: 30vh;
   }
 
@@ -1411,21 +1414,21 @@ footer {
   }
 
   .banner.banner-ambiente {
-    background: url(/assets/images/ambiente/banner.png) -100px 0px;
+    background: url(./assets/images/ambiente/banner.png) -100px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 30vh;
   }
 
   .banner.banner-etica {
-    background: url(/assets/images/etica/banner.png) -375px -65px;
+    background: url(./assets/images/etica/banner.png) -375px -65px;
     background-size: 170%;
     height: 30vh;
   }
 
   .banner.banner-relato {
     height: 30vh;
-    background: url(/assets/images/relato/banner.png) -80px -30px;
+    background: url(./assets/images/relato/banner.png) -80px -30px;
     background-size: 130%;
     background-repeat: no-repeat;
   }
@@ -1460,7 +1463,7 @@ footer {
   }
 
   .sec-relacionamento {
-    background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%),url(/assets/images/home/circulo.png) -700px 200px,url(/assets/images/home/bg-relacionamento.png) 0 46%;
+    background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%),url(./assets/images/home/circulo.png) -700px 200px,url(./assets/images/home/bg-relacionamento.png) 0 46%;
     background-size: 150%;
     background-repeat: no-repeat;
 
@@ -1476,7 +1479,7 @@ footer {
   }
 
   .sec-relato {
-    background: url(/assets/images/home/bg-relato.png) -250px 0;
+    background: url(./assets/images/home/bg-relato.png) -250px 0;
     background-size: 150%;
     background-repeat: no-repeat;
     height: 45vh;
@@ -1507,32 +1510,32 @@ footer {
   }
 
   .banner.banner-boas-vindas {
-    background: url(/assets/images/boas-vindas/bg-banner.png) -400px 0;
+    background: url(./assets/images/boas-vindas/bg-banner.png) -400px 0;
     background-size: cover;
     height: 50vh;
   }
 
   .banner.banner-inovacao {
-    background: linear-gradient(90deg, #4abf88 10%, transparent 15%),url(/assets/images/inovacao/banner.png) 0px 0;
+    background: linear-gradient(90deg, #4abf88 10%, transparent 15%),url(./assets/images/inovacao/banner.png) 0px 0;
     height: 50vh;
   }
 
   .banner.banner-relacionamento {
-    background: url(/assets/images/relacionamento/banner.png) -300px -18px;
+    background: url(./assets/images/relacionamento/banner.png) -300px -18px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
   }
 
   .banner.banner-ambiente {
-    background: url(/assets/images/ambiente/banner.png) -400px 0px;
+    background: url(./assets/images/ambiente/banner.png) -400px 0px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
   }
 
   .banner.banner-etica {
-    background: url(/assets/images/etica/banner.png) -375px -75px;
+    background: url(./assets/images/etica/banner.png) -375px -75px;
     background-size: 450%;
     height: 50vh;
 
@@ -1543,7 +1546,7 @@ footer {
 
   .banner.banner-relato {
     height: 50vh;
-    background: url(/assets/images/relato/banner.png) -200px -30px;
+    background: url(./assets/images/relato/banner.png) -200px -30px;
     background-size: 350%;
     background-repeat: no-repeat;
   }
@@ -1559,7 +1562,7 @@ footer {
   .sec-inovacao {
     background-size: 318%;
     height: 70vh;
-    background: url(/assets/images/home/bg-inovacao.png) -1301px -794px,linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
+    background: url(./assets/images/home/bg-inovacao.png) -1301px -794px,linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
   }
 
   .sec-tecnologia {
@@ -1567,7 +1570,7 @@ footer {
   }
 
   .sec-gestao {
-    background: url(/assets/images/home/bg-gestao.png) -200px 0,linear-gradient(60deg, #202d22 12%, #515151 30%) 0 0px;
+    background: url(./assets/images/home/bg-gestao.png) -200px 0,linear-gradient(60deg, #202d22 12%, #515151 30%) 0 0px;
     background-size: cover;
     height: 70vh;
 
@@ -1601,7 +1604,7 @@ footer {
   }
 
   .sec-ambiente {
-    background: url(/assets/images/home/bg-ambiente.png) -263px -65px;
+    background: url(./assets/images/home/bg-ambiente.png) -263px -65px;
     background-size: 250%;
     min-height: 45vh;
     padding-bottom: 6rem;
@@ -1630,7 +1633,7 @@ footer {
   }
 
   .sec-relato {
-    background: url(/assets/images/home/bg-relato.png) -320px 0;
+    background: url(./assets/images/home/bg-relato.png) -320px 0;
     background-size: 260%;
 
     h2 {
@@ -1645,7 +1648,7 @@ footer {
   }
 
   .sec-relacionamento {
-    background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%),url(/assets/images/home/circulo.png) -1050px 100px,url(/assets/images/home/bg-relacionamento.png) 0 55%;
+    background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%),url(./assets/images/home/circulo.png) -1050px 100px,url(./assets/images/home/bg-relacionamento.png) 0 55%;
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -1659,7 +1662,7 @@ footer {
   }
 
   .sec-ambiente {
-    background: url(/assets/images/home/bg-ambiente.png) -225px -40px;
+    background: url(./assets/images/home/bg-ambiente.png) -225px -40px;
     background-size: 115%;
     background-repeat: no-repeat;
     padding-top: 0rem;
@@ -1671,7 +1674,7 @@ footer {
   }
 
   .sec-relato {
-    background: url(/assets/images/home/bg-relato.png) -525px 0;
+    background: url(./assets/images/home/bg-relato.png) -525px 0;
     background-size: 150%;
     background-repeat: no-repeat;
     height: 80vh;
@@ -1708,7 +1711,7 @@ footer {
   }
 
   .banner.banner-gestao {
-    background: linear-gradient(95deg, #6440C4 20%, transparent 15%),url(/assets/images/gestao/banner.png) 100px 0;
+    background: linear-gradient(95deg, #6440C4 20%, transparent 15%),url(./assets/images/gestao/banner.png) 100px 0;
     background-size: cover;
     background-repeat: no-repeat;
   }
