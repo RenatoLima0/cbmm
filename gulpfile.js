@@ -35,7 +35,7 @@ function gulpJS() {
     presets: ['env']
   }))
   .pipe(uglify())
-  .pipe(gulp.dest('assets/js/'))
+  .pipe(gulp.dest('./'))
   .pipe(browserSync.stream());
 }
 

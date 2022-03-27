@@ -1324,6 +1324,12 @@ footer {
     background: url(/assets/images/etica/banner.png) -375px -40px;
     background-size: 170%;
   }
+
+  .banner.banner-relato {
+    background: url(/assets/images/relato/banner.png) -80px 0px;
+    background-size: 130%;
+    background-repeat: no-repeat;
+  }
 }
 
 @media(max-width: 1024px) and (min-height: 1366px) {
@@ -1362,6 +1368,13 @@ footer {
     background: url(/assets/images/etica/banner.png) -275px -40px;
     background-size: 170%;
     height: 25vh;
+  }
+
+  .banner.banner-relato {
+    height: 25vh;
+    background: url(/assets/images/relato/banner.png) -80px -90px;
+    background-size: 130%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -1408,6 +1421,13 @@ footer {
     background: url(/assets/images/etica/banner.png) -375px -65px;
     background-size: 170%;
     height: 30vh;
+  }
+
+  .banner.banner-relato {
+    height: 30vh;
+    background: url(/assets/images/relato/banner.png) -80px -30px;
+    background-size: 130%;
+    background-repeat: no-repeat;
   }
 
   .caixa-flutuante {
@@ -1519,6 +1539,13 @@ footer {
     h1 {
       font-size: 2.5rem;
     }
+  }
+
+  .banner.banner-relato {
+    height: 50vh;
+    background: url(/assets/images/relato/banner.png) -200px -30px;
+    background-size: 350%;
+    background-repeat: no-repeat;
   }
 
   .owl-carousel-main.owl-loaded .card {
