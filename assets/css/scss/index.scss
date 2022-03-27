@@ -126,16 +126,20 @@ a {
     .traco-3 {
       margin: 4px 0 0 0;
     }
+
+    
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .menu-hamburguer.ativo {
     position: relative;
-    right: 5%;
     width: 1.875rem;
     z-index: 15;
 
     .traco {
-      background: #000;
+      background: rgba(0, 0, 0, .4);
       border-radius: 10px;
       height: 3px;
       margin: 3.75px 0;
@@ -156,31 +160,51 @@ a {
     }
   }
 
+  @keyframes slideLeft {
+    from {
+      transform: translateX(-30px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
+
   .items-menu {
+    animation: slideLeft .3s forwards;
     background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, .25);
     display: none;
     flex-direction: column;
     height: fit-content;
-    padding: 2rem .5rem 1rem;
+    opacity: 0;
+    padding: 1.25rem .5rem 1rem 2.5rem;
     position: fixed;
     transition: .3s;
-    top: 0%;
-    width: 100%;
+    top: 1%;
+    width: 30%;
     z-index: 10;
 
     .link-nav-mobile {
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
     }
 
     .link-menu-mobile {
+      border-bottom: 1px solid rgba(0, 0, 0, .25);
+      color: #53575c;
       font-weight: 500;
       margin-bottom: .5rem;
-      padding: 1rem .5rem;
+      padding: 1.25rem .5rem .25rem;
+    }
+
+    span {
+      color: rgba(0, 0, 0, .4);padding-left: .5rem;
     }
   }
   
   .items-menu.ativo {
     display: flex;
+    opacity: 1;
   }
 
   .desc {
@@ -367,6 +391,15 @@ main {
 }
 
 .main-interna {
+  h3.main-title {
+    font-size: 2rem;
+
+    * {
+      font-size: inherit;
+      font-family: inherit;
+    }
+  }
+
   h3 {
     font-size: 1.25rem;
     font-family: 'telegraf-bold';
@@ -590,12 +623,14 @@ main {
 .caixa-flutuante {
   border-radius: 8px;
   box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, .15);
+  left: 60px;
+  max-width: 310px;
+  min-width: 300px;
   position: absolute;
-  left: 40px;
   top: 30px;
 
   header {
-    padding: .5rem 2.5rem .5rem 1.5rem;
+    padding: .5rem 1rem .5rem .5rem;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
@@ -625,8 +660,13 @@ main {
     color: #76777A;
     font-family: 'telegraf-regular';
     font-size: 1rem;
-    padding: .75rem 2.5rem .75rem 1.5rem;
+    padding: .75rem 1rem .75rem .5rem;
   }
+}
+
+.caixa-flutuante.fixa {
+  position: fixed;
+  top: 75px;
 }
 
 .caixa-flutuante.boas-vindas {
@@ -1197,11 +1237,375 @@ footer {
   padding: 6rem 0;
 }
 
+@media(max-width: 1024px){
+  .banner.banner-home {
+    height: 70vh;
+  }
+
+  .sec-inovacao {
+    align-items: flex-start;
+    height: 75vh;
+    padding-top: 5rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+  } 
+
+  .sec-tecnologia {
+    height: 70vh;
+  }
+
+  .sec-gestao {
+    height: 80vh;
+  }
+
+  .sec-relacionamento {
+    background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%),url(/assets/images/home/circulo.png) -830px 100px,url(/assets/images/home/bg-relacionamento.png) 0 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+
+    .titles-relacionamento {
+      height: 90vh;
+    }
+  } 
+
+  .sec-ambiente {
+    min-height: 78vh;
+    padding-bottom: 3rem;
+    padding-top: 0;
+  }
+
+  .sec-bio .card-ambiente {
+    margin-bottom: 0;
+  }
+
+  .sec-etica {
+    height: 70vh;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .sec-cultura {
+    background: linear-gradient(90deg, #213769 40%, #213769 40%) 0 -50px;
+    background-repeat: no-repeat;
+  }
+
+  .sec-relato {
+    background-size: 145%;
+    height: 80vh;
+  }
+
+  .sec-ambiente {
+    background: url(/assets/images/home/bg-ambiente.png) -120px -25px;
+    background-size: 130%;
+    min-height: 45vh;
+    padding-bottom: 6rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+  } 
+
+  .caixa-flutuante {
+    left: 30px;
+  }
+
+  .banner.banner-ambiente {
+    background: url(/assets/images/ambiente/banner.png) -160px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .banner.banner-etica {
+    background: url(/assets/images/etica/banner.png) -375px -40px;
+    background-size: 170%;
+  }
+}
+
+@media(max-width: 1024px) and (min-height: 1366px) {
+  .banner.banner-home, .sec-inovacao, .sec-tecnologia, .sec-gestao, .sec-etica, .sec-relato  {
+    height: 35vh;
+  }
+
+  .sec-relacionamento .titles-relacionamento {
+    height: 45vh;
+  }
+
+  .sec-ambiente {
+    min-height: 37vh;
+  }
+
+  .banner.banner-boas-vindas {
+    height: 25vh;
+  }
+
+  .banner.banner-inovacao {
+    height: 25vh;
+  }
+
+  .banner.banner-relacionamento {
+    height: 30vh;
+  }
+
+  .banner.banner-ambiente {
+    background: url(/assets/images/ambiente/banner.png) -0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+  }
+
+  .banner.banner-etica {
+    background: url(/assets/images/etica/banner.png) -275px -40px;
+    background-size: 170%;
+    height: 25vh;
+  }
+}
+
+@media(max-width: 768px){
+  .banner.banner-home {
+    background-size: 130%;
+    height: 45vh;
+  }
+
+  .banner {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  } 
+
+  .banner.banner-boas-vindas {
+    background: linear-gradient(90deg, #0064de 10%, transparent 15%),url(/assets/images/boas-vindas/bg-banner.png) 30px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+  }
+
+  .banner.banner-inovacao {
+    background: linear-gradient(90deg, #4abf88 10%, transparent 15%),url(/assets/images/inovacao/banner.png) 40px 0;
+    height: 30vh;
+  }
+
+  .banner.banner-relacionamento {
+    height: 30vh;
+  }
+
+  .banner.banner-ambiente {
+    background: url(/assets/images/ambiente/banner.png) -100px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+  }
+
+  .banner.banner-etica {
+    background: url(/assets/images/etica/banner.png) -375px -65px;
+    background-size: 170%;
+    height: 30vh;
+  }
+
+  .caixa-flutuante {
+    display: none;
+  }
+
+  .main-interna .card-interno {
+    width: 80%;
+  }
+
+  .sec-inovacao {
+    background-size: 140%;
+    height: 50vh;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .sec-gestao {
+    height: 45vh;
+  }
+
+  .sec-estrategia .card-estrateg img {
+    transform: none;
+  }
+
+  .sec-estrategia footer {
+    margin-top: 2rem;
+  }
+
+  .sec-relacionamento {
+    background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%),url(/assets/images/home/circulo.png) -700px 200px,url(/assets/images/home/bg-relacionamento.png) 0 46%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+
+    .titles-relacionamento {
+      height: 60vh;
+    }
+  } 
+
+  .sec-etica {
+    align-items: center;
+    height: 45vh;
+    padding-bottom: 1rem;
+  }
+
+  .sec-relato {
+    background: url(/assets/images/home/bg-relato.png) -250px 0;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    height: 45vh;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .nav-princ .items-menu {
+    width: 50%;
+  }
+}
+
+@media(max-width: 428px){
+  .nav-princ .items-menu {
+    width: 95%;
+  }
+
+  .banner.banner-home {
+    background-size: 300%;
+    height: 70vh;
+    background-position: -320px -12px;
+
+    h1 {
+      margin: 1rem 0;
+    }
+  }
+
+  .banner.banner-boas-vindas {
+    background: url(/assets/images/boas-vindas/bg-banner.png) -400px 0;
+    background-size: cover;
+    height: 50vh;
+  }
+
+  .banner.banner-inovacao {
+    background: linear-gradient(90deg, #4abf88 10%, transparent 15%),url(/assets/images/inovacao/banner.png) 0px 0;
+    height: 50vh;
+  }
+
+  .banner.banner-relacionamento {
+    background: url(/assets/images/relacionamento/banner.png) -300px -18px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+
+  .banner.banner-ambiente {
+    background: url(/assets/images/ambiente/banner.png) -400px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+
+  .owl-carousel-main.owl-loaded .card {
+    min-height: 450px;
+  }
+
+  .main-interna .card-interno {
+    width: 100%;
+  }
+
+  .sec-inovacao {
+    background-size: 318%;
+    height: 70vh;
+    background: url(/assets/images/home/bg-inovacao.png) -1301px -794px,linear-gradient(65deg, #202d22 12%, #515151 30%) 0 0px;
+  }
+
+  .sec-tecnologia {
+    height: 80vh;
+  }
+
+  .sec-gestao {
+    background: url(/assets/images/home/bg-gestao.png) -200px 0,linear-gradient(60deg, #202d22 12%, #515151 30%) 0 0px;
+    background-size: cover;
+    height: 70vh;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .sec-relacionamento {
+    background-size: 260%;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .titles-relacionamento {
+      height: fit-content;
+    }
+
+    .cards-dialogo {
+      flex-wrap: wrap;
+
+      .card {
+        &:first-child {
+          margin-bottom: 1rem;
+        }
+
+        width: 100%;
+      }
+    }
+  }
+
+  .sec-ambiente {
+    background: url(/assets/images/home/bg-ambiente.png) -263px -65px;
+    background-size: 250%;
+    min-height: 45vh;
+    padding-bottom: 6rem;
+    background-repeat: no-repeat;
+    h2 {
+      font-size: 2rem;
+    }
+  } 
+
+  .sec-bio {
+    .card-ambiente {
+      min-height: unset;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+
+  .sec-etica {
+    background-size: 225%;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .sec-relato {
+    background: url(/assets/images/home/bg-relato.png) -320px 0;
+    background-size: 260%;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
 @media(min-width: 1500px){
   .nav-princ header img {
     width: 60%;
   }
-
 
   .sec-relacionamento {
     background: linear-gradient(45deg, #fff 1%, rgba(0,0,0,0) 35%),url(/assets/images/home/circulo.png) -1050px 100px,url(/assets/images/home/bg-relacionamento.png) 0 55%;
@@ -1254,10 +1658,34 @@ footer {
   }
 
   .banner {
-    padding-bottom: 10rem;
+    // padding-bottom: 10rem;
 
     .arrow-down {
       bottom: 5%;
     }
+  }
+
+  .banner.banner-boas-vindas,
+  .banner.banner-inovacao {
+    height: 60vh;
+  }
+
+  .banner.banner-gestao {
+    background: linear-gradient(95deg, #6440C4 20%, transparent 15%),url(/assets/images/gestao/banner.png) 100px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .caixa-flutuante {
+    left: 300px;
+  }
+
+  .caixa-flutuante.fixa {
+    position: fixed;
+    top: 85px;
+  }
+
+  .main-interna .card-interno {
+    width: 75%;
   }
 }
