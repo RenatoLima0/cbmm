@@ -8,9 +8,7 @@ if(document.querySelector('.nav-princ')){
       itemsMenu.classList.toggle('ativo');
     }
   
-    ['touchstart', 'click'].forEach(userEvent => {
-      menuHamburger.addEventListener(userEvent, clickMenu);
-    });
+    menuHamburger.addEventListener('click', clickMenu);
   }
   
   ativaMenu();  
@@ -22,7 +20,6 @@ if(document.querySelector('.caixa-flutuante')){
     const mainContent = document.querySelector('.main-content');
     const caixaFlut = document.querySelector('.caixa-flutuante');
     const sectionTop = mainContent.getBoundingClientRect().top;
-    
     
     if(sectionTop < 70){
       caixaFlut.classList.add('fixa');
@@ -40,7 +37,8 @@ $('.owl-carousel-main').owlCarousel({
   nav: false,
   responsive: {
     0:{
-      items:1.2
+      dots: true,
+      items:1,
     },
     600:{
       items:3
