@@ -249,9 +249,124 @@ a {
   }
 }
 
+.navegacao-pags {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: -13%;
+  padding: 0 .5rem;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .volta .seta {
+    transform: rotate(180deg);
+  }
+
+  .seta {
+    font-family: 'telegraf-bold';
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+  }
+
+  span {
+    font-family: 'telegraf-bold';
+  }
+
+  img {
+    max-width: 60px;
+  }
+}
+
+.navegacao-pags.azul {
+  span {
+    color: $blue;
+  }
+
+  .seta {
+    background-color: $blue;
+  }
+} 
+
+.navegacao-pags.verde {
+  span {
+    color: $green;
+  }
+
+  .seta {
+    background-color: $green;
+  }
+} 
+
+.navegacao-pags.amarelo {
+  bottom: -7.5%;
+
+  span {
+    color: $yellow;
+  }
+
+  .seta {
+    background-color: $yellow;
+  }
+} 
+
+.navegacao-pags.roxo {
+  bottom: -1.5%;
+
+  span {
+    color: $purple;
+  }
+
+  .seta {
+    background-color: $purple;
+  }
+} 
+
+.navegacao-pags.amareloold {
+  bottom: -1.5%;
+
+  span {
+    color: $oldGreen;
+  }
+
+  .seta {
+    background-color: $oldGreen;
+  }
+} 
+
+.navegacao-pags.azulescuro {
+  bottom: -7.5%;
+
+  span {
+    color: $softPurple;
+  }
+
+  .seta {
+    background-color: $softPurple;
+  }
+} 
+
+.navegacao-pags.cinza {
+  bottom: 1.5%;
+
+  span {
+    color: $gray;
+  }
+
+  .seta {
+    background-color: $gray;
+  }
+} 
+
 .banner {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   * {
     color: #DEEDFF;
@@ -1340,6 +1455,22 @@ footer {
     height: 35vh;
   }
 
+  .navegacao-pags {
+    bottom: -18%;
+  }
+
+  .navegacao-pags.amarelo {
+    bottom: 0;
+  }
+
+  .navegacao-pags.roxo {
+    bottom: -8.5%;
+  }
+
+  .navegacao-pags.cinza {
+    bottom: -6.5%;
+  }
+
   .sec-relacionamento .titles-relacionamento {
     height: 45vh;
   }
@@ -1378,6 +1509,10 @@ footer {
     background: url(./assets/images/relato/banner.png) -80px -90px;
     background-size: 130%;
     background-repeat: no-repeat;
+  }
+
+  .banner.banner-gestao {
+    height: 25vh;
   }
 }
 
@@ -1431,6 +1566,29 @@ footer {
     background: url(./assets/images/relato/banner.png) -80px -30px;
     background-size: 130%;
     background-repeat: no-repeat;
+  }
+
+  .banner.banner-gestao {
+    background: url(./assets/images/gestao/banner.png) -150px -30px;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    height: 30vh;
+  }
+
+  .navegacao-pags {
+    bottom: -20%;
+  }
+
+  .navegacao-pags.amarelo {
+    bottom: -4%;
+  }
+
+  .navegacao-pags.roxo {
+    bottom: -10.5%;
+  }
+
+  .navegacao-pags.cinza {
+    bottom: -7%;
   }
 
   .caixa-flutuante {
@@ -1499,6 +1657,26 @@ footer {
     width: 95%;
   }
 
+  .nav-princ form {
+    opacity: 0;
+  }
+
+  .navegacao-pags {
+    bottom: -13.5%;
+  }
+
+  .navegacao-pags.amarelo {
+    bottom: 1%;
+  }
+
+  .navegacao-pags.roxo {
+    bottom: -1.5%;
+  }
+
+  .navegacao-pags.cinza {
+    bottom: 2%;
+  }
+
   .banner.banner-home {
     background-size: 300%;
     height: 70vh;
@@ -1549,6 +1727,13 @@ footer {
     background: url(./assets/images/relato/banner.png) -200px -30px;
     background-size: 350%;
     background-repeat: no-repeat;
+  }
+
+  .banner.banner-gestao {
+    background: url(./assets/images/gestao/banner.png) -250px -30px;
+    background-size: 350%;
+    background-repeat: no-repeat;
+    height: 50vh;
   }
 
   .owl-carousel-main.owl-loaded .card {
@@ -1642,6 +1827,12 @@ footer {
   }
 }
 
+@media(max-width: 375px) {
+  .navegacao-pags {
+    display: none;
+  }
+}
+
 @media(min-width: 1500px){
   .nav-princ header img {
     width: 60%;
@@ -1697,6 +1888,14 @@ footer {
     padding: 4rem 0;
   }
 
+  .navegacao-pags {
+    bottom: -10.5%;
+  }
+
+  .navegacao-pags.amarelo {
+    bottom: 0%;
+  }
+
   .banner {
     // padding-bottom: 10rem;
 
@@ -1707,6 +1906,7 @@ footer {
 
   .banner.banner-boas-vindas,
   .banner.banner-inovacao {
+    background-size: 105%;
     height: 60vh;
   }
 
