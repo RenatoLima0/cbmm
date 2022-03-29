@@ -190,12 +190,69 @@ a {
     }
 
     .link-menu-mobile {
-      border-bottom: 1px solid rgba(0, 0, 0, .25);
+      border-bottom: 1.5px solid rgba(0, 0, 0, .25);
       color: #53575c;
       font-weight: 500;
       margin-bottom: .5rem;
       padding: 1.25rem .5rem .25rem;
     }
+
+    .link-menu-mobile.blue {
+      border-color: $blue;
+
+      path {
+        color: $blue;
+      }
+    }
+
+    .link-menu-mobile.green {
+      border-color: $green;
+
+      path {
+        color: $green;
+      }
+    }
+
+    .link-menu-mobile.yellow {
+      border-color: $yellow;
+
+      path {
+        color: $yellow;
+      }
+    }
+
+    .link-menu-mobile.purple {
+      border-color: $purple;
+
+      path {
+        color: $purple;
+      }
+    }
+
+    .link-menu-mobile.oldgreen {
+      border-color: $oldGreen;
+
+      path {
+        color: $oldGreen;
+      }
+    }
+
+    .link-menu-mobile.softpurple {
+      border-color: $softPurple;
+
+      path {
+        color: $softPurple;
+      }
+    }
+
+    .link-menu-mobile.gray {
+      border-color: $gray;
+
+      path {
+        color: $gray;
+      }
+    }
+
 
     span {
       color: rgba(0, 0, 0, .4);padding-left: .5rem;
@@ -256,6 +313,7 @@ a {
   bottom: -13%;
   padding: 0 .5rem;
   justify-content: space-between;
+  z-index: 10;
 
   a {
     display: flex;
@@ -304,7 +362,7 @@ a {
 } 
 
 .navegacao-pags.amarelo {
-  bottom: -7.5%;
+  // bottom: -7.5%;
 
   span {
     color: $yellow;
@@ -316,7 +374,7 @@ a {
 } 
 
 .navegacao-pags.roxo {
-  bottom: -1.5%;
+  // bottom: -1.5%;
 
   span {
     color: $purple;
@@ -328,7 +386,7 @@ a {
 } 
 
 .navegacao-pags.amareloold {
-  bottom: -1.5%;
+  // bottom: -1.5%;
 
   span {
     color: $oldGreen;
@@ -340,7 +398,7 @@ a {
 } 
 
 .navegacao-pags.azulescuro {
-  bottom: -7.5%;
+  // bottom: -7.5%;
 
   span {
     color: $softPurple;
@@ -352,7 +410,7 @@ a {
 } 
 
 .navegacao-pags.cinza {
-  bottom: 1.5%;
+  // bottom: 1.5%;
 
   span {
     color: $gray;
@@ -781,6 +839,12 @@ main {
 
 .caixa-flutuante.fixa {
   position: fixed;
+  top: 130px;
+}
+
+.navegacao-pags.fixa {
+  height: fit-content;
+  position: fixed;
   top: 75px;
 }
 
@@ -788,11 +852,19 @@ main {
   header {
     background: $blue;
   }
+
+  li.ativo {
+    background: rgba(0, 115, 255, .2);
+  }
 }
 
 .caixa-flutuante.inovacao {
   header {
     background: #45E68B;
+  }
+
+  li.ativo {
+    background: rgba(69, 230, 139, .2);
   }
 }
 
@@ -1385,6 +1457,10 @@ footer {
 } 
 
 @media(max-width: 1024px){
+  .nav-princ .items-menu {
+    width: 40%;
+  }
+
   .banner.banner-home {
     height: 70vh;
   }
@@ -1488,9 +1564,9 @@ footer {
     bottom: -18%;
   }
 
-  .navegacao-pags.amarelo {
-    bottom: 0;
-  }
+  // .navegacao-pags.amarelo {
+  //   bottom: 0;
+  // }
 
   .navegacao-pags.roxo {
     bottom: -8.5%;
@@ -1508,40 +1584,25 @@ footer {
     min-height: 37vh;
   }
 
-  .banner.banner-boas-vindas {
+  .banner.banner-boas-vindas, .banner.banner-inovacao, .banner.banner-relacionamento, .banner.banner-ambiente, .banner.banner-etica, .banner.banner-relato, .banner.banner-gestao {
     height: 25vh;
-  }
-
-  .banner.banner-inovacao {
-    height: 25vh;
-  }
-
-  .banner.banner-relacionamento {
-    height: 30vh;
   }
 
   .banner.banner-ambiente {
     background: url(./assets/images/ambiente/banner.png) -0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 25vh;
   }
 
   .banner.banner-etica {
     background: url(./assets/images/etica/banner.png) -275px -40px;
     background-size: 170%;
-    height: 25vh;
   }
 
   .banner.banner-relato {
-    height: 25vh;
     background: url(./assets/images/relato/banner.png) -80px -90px;
     background-size: 130%;
     background-repeat: no-repeat;
-  }
-
-  .banner.banner-gestao {
-    height: 25vh;
   }
 }
 
@@ -1608,17 +1669,17 @@ footer {
     bottom: -20%;
   }
 
-  .navegacao-pags.amarelo {
-    bottom: -4%;
-  }
+  // .navegacao-pags.amarelo {
+  //   bottom: -4%;
+  // }
 
-  .navegacao-pags.roxo {
-    bottom: -10.5%;
-  }
+  // .navegacao-pags.roxo {
+  //   bottom: -10.5%;
+  // }
 
-  .navegacao-pags.cinza {
-    bottom: -7%;
-  }
+  // .navegacao-pags.cinza {
+  //   bottom: -7%;
+  // }
 
   .caixa-flutuante {
     display: none;
@@ -1699,17 +1760,17 @@ footer {
     bottom: -13.5%;
   }
 
-  .navegacao-pags.amarelo {
-    bottom: 1%;
-  }
+  // .navegacao-pags.amarelo {
+  //   bottom: 1%;
+  // }
 
-  .navegacao-pags.roxo {
-    bottom: -1.5%;
-  }
+  // .navegacao-pags.roxo {
+  //   bottom: -1.5%;
+  // }
 
-  .navegacao-pags.cinza {
-    bottom: 2%;
-  }
+  // .navegacao-pags.cinza {
+  //   bottom: 2%;
+  // }
 
   .banner.banner-home {
     background-size: 300%;
@@ -1721,35 +1782,34 @@ footer {
     }
   }
 
+  .banner.banner-boas-vindas, .banner.banner-inovacao, .banner.banner-relacionamento, .banner.banner-ambiente, .banner.banner-etica, .banner.banner-relato, .banner.banner-gestao  {
+    height: 50vh;
+  }
+
   .banner.banner-boas-vindas {
     background: url(./assets/images/boas-vindas/bg-banner.png) -400px 0;
     background-size: cover;
-    height: 50vh;
   }
 
   .banner.banner-inovacao {
     background: linear-gradient(90deg, #4abf88 10%, transparent 15%),url(./assets/images/inovacao/banner.png) 0px 0;
-    height: 50vh;
   }
 
   .banner.banner-relacionamento {
-    background: url(./assets/images/relacionamento/banner.png) -300px -18px;
-    background-size: cover;
+    background: url(./assets/images/relacionamento/banner.png) -410px 0px;
+    background-size: 400%;
     background-repeat: no-repeat;
-    height: 50vh;
   }
 
   .banner.banner-ambiente {
-    background: url(./assets/images/ambiente/banner.png) -400px 0px;
-    background-size: cover;
+    background: url(./assets/images/ambiente/banner.png) -450px 0px;
+    background-size: 390%;
     background-repeat: no-repeat;
-    height: 50vh;
   }
 
   .banner.banner-etica {
-    background: url(./assets/images/etica/banner.png) -375px -75px;
+    background: url(./assets/images/etica/banner.png) -375px -25px;
     background-size: 450%;
-    height: 50vh;
 
     h1 {
       font-size: 2.5rem;
@@ -1757,17 +1817,15 @@ footer {
   }
 
   .banner.banner-relato {
-    height: 50vh;
-    background: url(./assets/images/relato/banner.png) -200px -30px;
-    background-size: 350%;
+    background: url(./assets/images/relato/banner.png) -200px 0px;
+    background-size: 390%;
     background-repeat: no-repeat;
   }
 
   .banner.banner-gestao {
-    background: url(./assets/images/gestao/banner.png) -250px -30px;
-    background-size: 350%;
+    background: url(./assets/images/gestao/banner.png) -330px 0px;
+    background-size: 380%;
     background-repeat: no-repeat;
-    height: 50vh;
   }
 
   .owl-carousel-main.owl-loaded .card {
@@ -1859,9 +1917,21 @@ footer {
       font-size: 2rem;
     }
   }
+
+  .navegacao-pags.fixa {
+    position: inherit;
+  }
+
+  .nav-princ .items-menu .link-menu-mobile {
+    padding: 1.5rem .5rem 0.45rem;
+  }
 }
 
 @media(max-width: 375px) {
+  .banner h1 {
+    font-size: 2.7rem;
+  }
+
   .navegacao-pags {
     display: none;
   }
@@ -1926,9 +1996,9 @@ footer {
     bottom: -10.5%;
   }
 
-  .navegacao-pags.amarelo {
-    bottom: 0%;
-  }
+  // .navegacao-pags.amarelo {
+  //   bottom: 0%;
+  // }
 
   .banner {
     // padding-bottom: 10rem;
@@ -1945,9 +2015,35 @@ footer {
   }
 
   .banner.banner-gestao {
-    background: linear-gradient(95deg, #6440C4 20%, transparent 15%),url(./assets/images/gestao/banner.png) 100px 0;
+    background: linear-gradient(95deg, #6440C4 20%, transparent 15%),url(./assets/images/gestao/banner.png) 100px -90px;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 60vh;
+  }
+
+  .banner.banner-etica {
+    background: url(./assets/images/etica/banner.png) -80px -128px;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    height: 60vh;
+  }
+
+  .banner.banner-ambiente {
+    background: url(./assets/images/ambiente/banner.png) 0px -70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+  }
+
+  .banner.banner-relato {
+    height: 60vh;
+  }
+
+  .banner.banner-relacionamento {
+    background: url(./assets/images/relacionamento/banner.png) 0px -93px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
   }
 
   .caixa-flutuante {
@@ -1956,7 +2052,7 @@ footer {
 
   .caixa-flutuante.fixa {
     position: fixed;
-    top: 85px;
+    top: 120px;
   }
 
   .main-interna .card-interno {
