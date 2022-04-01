@@ -310,7 +310,7 @@ a {
   display: flex;
   position: absolute;
   width: 100%;
-  bottom: -13%;
+  bottom: 0%;
   padding: 0 .5rem;
   justify-content: space-between;
   z-index: 10;
@@ -350,6 +350,12 @@ a {
     background-color: $blue;
   }
 } 
+
+table {
+  .table-light {
+    --bs-table-bg: #fff;
+  }
+}
 
 .navegacao-pags.verde {
   span {
@@ -558,7 +564,7 @@ main {
 
   .li-title {
     font-family: 'telegraf-bold';
-    color: darken($green, 15%);
+    color: $green;
     margin-bottom: .75rem;
   }
 }
@@ -796,11 +802,12 @@ main {
 .caixa-flutuante {
   border-radius: 8px;
   box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, .15);
-  left: 60px;
+  left: 30px;
   max-width: 310px;
   min-width: 300px;
   position: absolute;
   top: 30px;
+  z-index: 10;
 
   header {
     padding: .5rem 1rem .5rem .5rem;
@@ -830,6 +837,7 @@ main {
   }
 
   li, button, .nav-link, .nav-link:hover {
+    background: #fff;
     color: #76777A;
     font-family: 'telegraf-regular';
     font-size: 1rem;
@@ -839,13 +847,14 @@ main {
 
 .caixa-flutuante.fixa {
   position: fixed;
-  top: 130px;
+  top: 270px;
 }
 
 .navegacao-pags.fixa {
   height: fit-content;
   position: fixed;
-  top: 75px;
+  top: 145px;
+  z-index: 9;
 }
 
 .caixa-flutuante.boas-vindas {
@@ -999,10 +1008,11 @@ main {
 
   .img-inov {
     box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, .25);
+    width: 100%;
   }
 
   span {
-    color: #393C40;
+    color: #9ddda9;
     font-family: 'telegraf-bold';
     font-size: 1.25rem;
   }
@@ -1534,7 +1544,7 @@ footer {
   } 
 
   .caixa-flutuante {
-    left: 30px;
+    left: 16px;
   }
 
   .banner.banner-ambiente {
@@ -2040,7 +2050,7 @@ footer {
   }
 
   .banner.banner-relacionamento {
-    background: url(./assets/images/relacionamento/banner.png) 0px -93px;
+    background: url(./assets/images/relacionamento/banner.png) 0px -100px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;

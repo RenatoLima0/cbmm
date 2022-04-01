@@ -9,6 +9,7 @@ if(document.querySelector('.nav-princ')){
     }
   
     menuHamburger.addEventListener('click', clickMenu);
+    itemsMenu.addEventListener('mouseleave', clickMenu);
   }
   
   ativaMenu();  
@@ -21,9 +22,9 @@ if(document.querySelector('.caixa-flutuante')){
     const navegacaoPags = document.querySelector('.navegacao-pags')
     const caixaFlut = document.querySelector('.caixa-flutuante');
     const sectionTop = mainContent.getBoundingClientRect().top;
-    // console.log(sectionTop);
+    console.log(sectionTop);
     
-    if(sectionTop < 100){
+    if(sectionTop < 260){
       caixaFlut.classList.add('fixa');
       navegacaoPags.classList.add('fixa');
     } else if (sectionTop > 100) {
