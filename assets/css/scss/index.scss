@@ -285,8 +285,8 @@ a {
     }
 
     img {
-      margin-right: -8px;
-      width: 40%;
+      margin-right: 8px;
+      width: 20%;
     }
   }
   
@@ -301,6 +301,7 @@ a {
     border: 1px solid #fff;
     border-radius: 16px;
     background: transparent;
+    // background: url('./assets/images/icons/search.svg') transparent;
     margin-right: 1rem;
     min-height: 32px;
   }
