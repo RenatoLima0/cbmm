@@ -22,7 +22,7 @@ if(document.querySelector('.caixa-flutuante')){
     const navegacaoPags = document.querySelector('.navegacao-pags')
     const caixaFlut = document.querySelector('.caixa-flutuante');
     const sectionTop = mainContent.getBoundingClientRect().top;
-    console.log(sectionTop);
+    // console.log(sectionTop);
     
     if(sectionTop < 260){
       caixaFlut.classList.add('fixa');
@@ -33,30 +33,42 @@ if(document.querySelector('.caixa-flutuante')){
     } 
   }
 
-  // const ativaItemFlutuante = () => {
-  //   const listaCaixa = document.querySelectorAll('.caixa-flutuante li');
-  //   const titlesMain = document.querySelectorAll('.main-content h3.main-title');
+  const ativaItemFlutuante = () => {
+    const listaCaixa = document.querySelectorAll('.caixa-flutuante li');
+    const titlesMain = document.querySelectorAll('.main-content h3.main-title');
 
-  //   const limpaLista = () => {
-  //     listaCaixa.forEach(item => item.classList.remove('ativo'));
-  //   }
+    const limpaLista = () => {
+      listaCaixa.forEach(item => item.classList.remove('ativo'));
+      console.log('aqui')
+    }
+    
+    const zeraLista = () => {
+      const windowMetade = window.innerHeight * 0.9;
+      const titleTop = titlesMain[0].getBoundingClientRect().top;
+      const isSectionVisible = (titleTop - windowMetade) > 0;
+      if (!isSectionVisible) {
+        document.querySelectorAll('.caixa-flutuante li')[0].classList.remove('ativo');
+        // console.log('aqui');
+      }
+    }
 
-  //   titlesMain.forEach((title, index) => {
-  //     const titleTop = title.getBoundingClientRect().top;
-  //     console.log('item ' + index + ' ' + titleTop);
+    titlesMain.forEach((title, index) => {
+      const titleTop = title.getBoundingClientRect().top;
+      // console.log('item ' + index + ' ' + titleTop);
 
-  //     if(titleTop < 300){
-  //       limpaLista();
-  //       listaCaixa[index].classList.add('ativo');
-  //     } else if (titleTop < 0){
-  //       limpaLista();
-  //     }
-  //   })
+      if(titleTop < 300){
+        limpaLista();
+        zeraLista();
+        listaCaixa[index].classList.add('ativo');
+      } else if (titleTop < 0){
+        limpaLista();
+      }
+    })
 
-  // }
+  }
   
   window.addEventListener('scroll', animaCol);
-  // window.addEventListener('scroll', ativaItemFlutuante);
+  window.addEventListener('scroll', ativaItemFlutuante);
   
 }
 
@@ -74,6 +86,7 @@ $('.owl-carousel-main').owlCarousel({
       items:3
     },
     1000:{
+      dots: false,
       items:4
     }
   }
