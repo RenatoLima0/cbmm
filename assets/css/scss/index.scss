@@ -846,14 +846,16 @@ main {
 
   a {
     color: #76777A;
+    padding: .75rem 1rem .75rem .5rem;
+    width: 100%;
   }
 
   li, button, .nav-link, .nav-link:hover {
     background: #fff;
     color: #76777A;
+    display: flex;
     font-family: 'telegraf-regular';
     font-size: 1rem;
-    padding: .75rem 1rem .75rem .5rem;
   }
 }
 
@@ -874,7 +876,7 @@ main {
     background: $blue;
   }
 
-  li.ativo, li:hover {
+  a.ativo, a:hover {
     background: rgba(0, 115, 255, .2);
     cursor: pointer;
   }
@@ -885,7 +887,7 @@ main {
     background: #45E68B;
   }
 
-  li.ativo, li:hover {
+  a.ativo, a:hover {
     background: rgba(69, 230, 139, .2);
     cursor: pointer;
   }
@@ -896,7 +898,7 @@ main {
     background: #8A80FF;
   }
 
-  li.ativo, li:hover {
+  a.ativo, a:hover {
     background: rgba(138, 128, 255, .2);
     cursor: pointer;
   }
@@ -907,7 +909,7 @@ main {
     background: #FFA126;
   }
 
-  li.ativo, li:hover {
+  a.ativo, a:hover {
     background: rgba(255, 161, 38, .2);
     cursor: pointer;
   }
@@ -918,7 +920,7 @@ main {
     background: #DACE1C;
   }
   
-  li.ativo, li:hover {
+  a.ativo, a:hover {
     background: rgba(218, 206, 28, .2);
     cursor: pointer;
   }
@@ -929,7 +931,7 @@ main {
     background: #2E4799;
   }
 
-  li.ativo, li:hover {
+  a.ativo, a:hover {
     background: rgba(46, 71, 153, .2);
     cursor: pointer;
   }
@@ -940,7 +942,7 @@ main {
     background: #76777A;
   }
   
-  li.ativo, li:hover {
+  a.ativo, a:hover {
     background: rgba(118, 119, 122, .2);
     cursor: pointer;
   }
@@ -955,6 +957,22 @@ main {
 
   .card-1 {
     background-image: url(./assets/images/home/card-temas-rel-1.png);
+    
+    // &::before {
+    //   content: '';
+    //   background-color: red;
+    //   border-radius: 16px;
+    //   width: 100%;
+    //   min-height: 320px;
+    //   position: absolute;
+    //   transition: .2s;
+    //   z-index: 2;
+    // }
+
+    // &:hover::before {
+    //   transform: scale(1.1);
+    //   max-width: inherit;
+    // }
   }
 
   .card-2 {
@@ -972,14 +990,6 @@ main {
   .card-5 {
     background-image: url(./assets/images/home/card-temas-rel-5.png);
   }
-}
-
-.owl-carousel-main.owl-loaded {
-  padding: 0 0;
-  
-  .owl-stage-outer {
-    padding: 1rem 0 1rem 8px;
-  }
 
   .card {
     // align-items: flex-end;
@@ -991,14 +1001,26 @@ main {
     display: flex;
     justify-content: flex-end;
     min-height: 320px;
-    padding: 0 1.5rem 1rem 1rem;
+    transition: .3s;
+    position: relative;
   }
-
+  
   h3 {
     color: #fff;
     font-size: 1.25rem;
     font-family: 'telegraf-bold';
     line-height: 1;
+    padding: 0 1.5rem 1rem 1rem;
+    // position: relative;
+    // z-index: 5;
+  }
+}
+
+.owl-carousel-main.owl-loaded {
+  padding: 0 0;
+  
+  .owl-stage-outer {
+    padding: 1rem 0 1rem 8px;
   }
 }
 

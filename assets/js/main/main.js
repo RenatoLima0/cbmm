@@ -34,23 +34,33 @@ if(document.querySelector('.caixa-flutuante')){
   }
 
   const ativaItemFlutuante = () => {
-    const listaCaixa = document.querySelectorAll('.caixa-flutuante li');
+    const listaCaixa = document.querySelectorAll('.caixa-flutuante li a');
     const titlesMain = document.querySelectorAll('.main-content h3.main-title');
 
     const limpaLista = () => {
       listaCaixa.forEach(item => item.classList.remove('ativo'));
-      console.log('aqui')
     }
     
     const zeraLista = () => {
-      const windowMetade = window.innerHeight * 0.9;
       const titleTop = titlesMain[0].getBoundingClientRect().top;
-      const isSectionVisible = (titleTop - windowMetade) > 0;
-      if (!isSectionVisible) {
-        document.querySelectorAll('.caixa-flutuante li')[0].classList.remove('ativo');
-        // console.log('aqui');
+      if (titleTop > 500) {
+        document.querySelectorAll('.caixa-flutuante li a')[0].classList.remove('ativo');
       }
     }
+
+    function scrollToTitle(e) {
+      e.preventDefault();
+      const href = e.currentTarget.getAttribute('href');
+      const section = document.querySelector(href);
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+
+    listaCaixa.forEach((link) => {
+      link.addEventListener('click', scrollToTitle)
+    })
 
     titlesMain.forEach((title, index) => {
       const titleTop = title.getBoundingClientRect().top;
@@ -58,20 +68,18 @@ if(document.querySelector('.caixa-flutuante')){
 
       if(titleTop < 300){
         limpaLista();
-        zeraLista();
         listaCaixa[index].classList.add('ativo');
       } else if (titleTop < 0){
         limpaLista();
+      } else if (titleTop > 300) {
+        zeraLista();
       }
     })
-
   }
   
   window.addEventListener('scroll', animaCol);
   window.addEventListener('scroll', ativaItemFlutuante);
-  
 }
-
 
 $('.owl-carousel-main').owlCarousel({
   loop: false,
